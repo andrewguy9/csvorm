@@ -257,6 +257,15 @@ class Integer(Type_):
     def decode(value):
         return int(value)
 
+class Float(Type_):
+    @staticmethod
+    def encode(value):
+        return str(value)
+
+    @staticmethod
+    def decode(value):
+        return float(value)
+
 
 class Unicode(Type_):
     def __init__(self, encoding):
